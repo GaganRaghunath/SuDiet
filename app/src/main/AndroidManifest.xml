@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.androidproject.sudiet">
+
+    <application
+        android:name=".SuDietApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/GlucosioTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.MedicineActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity android:name=".activity.DietActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name=".activity.AddPressureActivity" />
+        <activity android:name=".activity.AddWeightActivity" />
+        <activity android:name=".activity.AddA1CActivity" />
+        <activity android:name=".activity.AddGlucoseActivity" />
+        <activity android:name=".activity.PreferencesActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.HelloActivity" />
+        <activity android:name=".activity.ViewPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
